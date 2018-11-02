@@ -1,0 +1,21 @@
+Automatic encoder selection failed for output stream #0:1. Default encoder for
+format 3gp (codec amr_nb) is probably disabled. Please choose an encoder manually.
+
+
+# we need to catch format=3gp and codec=amr_nb
+
+Error selecting an encoder for stream 0:1
+
+
+{  'error_class': <class 'ffmpeg.video.EncoderSelectionFailed'>,
+   'name': 'Automatic encoder selection failed',
+   'arguments': []
+   }
+
+
+# so an error has an error_class, a name and arguments which are going to
+# be passed in the error_class __init__ constructor for raising the error
+
+
+# formal __repr__  the output of __repr__ can be called by eval
+# informal __str__
